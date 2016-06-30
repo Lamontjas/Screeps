@@ -28,7 +28,7 @@ module.exports.loop = function () {
         Game.spawns.Spawn1.createCreep([WORK, CARRY, MOVE], undefined, {role: 'upgrader'});
     }
     var repairers = _.filter(Game.creeps, (creep) => creep.memory.role == 'repairer');
-    if (upgraders.length < 4) {
+    if (upgraders.length < 1) {
         Game.spawns.Spawn1.createCreep([WORK, CARRY, MOVE], undefined, {role: 'repairer', isRepairing:false});
     }
     
